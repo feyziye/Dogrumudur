@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kullanc.dogrumudur.MainActivity"
+    android:background="@color/colorAccent"
+    android:id="@+id/activitymain">
+
+    <TextView
+        android:text="Bir Kategori Seçiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detay"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/uc"
+        android:id="@+id/edebiyat"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/tarih"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:text="EDEBİYAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/edebiyat"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15dp" />
+
+    <TextView
+        android:text="COĞRAFYA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView10"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/tarih"
+        android:layout_toLeftOf="@+id/detay"
+        android:layout_toStartOf="@+id/detay"
+        android:textStyle="bold|italic"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iki"
+        android:id="@+id/tarih"
+        android:layout_alignBottom="@+id/cografya"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bir"
+        android:id="@+id/cografya"
+        android:layout_above="@+id/detay"
+        android:layout_toLeftOf="@+id/tarih"
+        android:layout_toStartOf="@+id/tarih"
+        android:layout_marginBottom="332dp" />
+
+    <TextView
+        android:text="TARİH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toRightOf="@+id/edebiyat"
+        android:layout_toEndOf="@+id/edebiyat"
+        android:textStyle="bold|italic"
+        android:textSize="15dp" />
+
+</RelativeLayout>
